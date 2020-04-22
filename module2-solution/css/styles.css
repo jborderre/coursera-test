@@ -1,9 +1,19 @@
+/*** Reseting default browser settings ***/
 
-/********** Desktop **********/
+* {box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*** Simple Responsive Framework. ***/
+.row {
+  width: 100%;
+}
+
+/*** Desktop ***/
 @media (min-width: 992px) {
   .col-desktop-1, .col-desktop-2, .col-desktop-3, .col-desktop-4, .col-desktop-5, .col-desktop-6, .col-desktop-7, .col-desktop-8, .col-desktop-9, .col-desktop-10, .col-desktop-11, .col-desktop-12 {
     float: left;
-    border: 1px solid green;
   }
   .col-desktop-1 {
     width: 8.33%;
@@ -43,12 +53,11 @@
   }
 }
 
-/********** Tablet **********/
+/*** Tablet ***/
 @media (min-width: 768px) and (max-width: 991px) {
   .col-tablet-1, .col-tablet-2, .col-tablet-3, .col-tablet-4, .col-tablet-5, .col-tablet-6, .col-tablet-7, .col-tablet-8, .col-tablet-9, .col-tablet-10, .col-tablet-11, .col-tablet-12 {
     float: left;
-    border: 1px solid green;
-  }
+      }
   .col-tablet-1 {
     width: 8.33%;
   }
@@ -87,12 +96,11 @@
   }
 }
 
-/********** Mobile **********/
+/*** Mobile ***/
 @media (max-width: 767px) {
   .col-mobile-1, .col-mobile-2, .col-mobile-3, .col-mobile-4, .col-mobile-5, .col-mobile-6, .col-mobile-7, .col-mobile-8, .col-mobile-9, .col-mobile-10, .col-mobile-11, .col-mobile-12 {
     float: left;
-    border: 1px solid green;
-  }
+      }
   .col-mobile-1 {
     width: 8.33%;
   }
@@ -129,4 +137,55 @@
   .col-mobile-12 {
     width: 100%;
   }
+}
+
+/*** Position and style ***/
+
+*{
+  font-family: Tahoma, Geneva, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 175%;
+  margin-bottom: 28px;
+  margin-top: 18px;
+  }
+
+section {
+  position: relative; 
+  margin: 15px; 
+  border: 1px solid black;
+  background-color: #e6e2d3;
+}
+
+h2 {
+  position:absolute; 
+  top:-1px; 
+  right:-1px; 
+  border: 1px solid black; 
+  width:150px; 
+  text-align: center;
+  color:white;
+  font-size: 125%;
+  font-weight: normal;
+  padding:5px;
+}
+
+h2#chicken{
+  background-color: #7a3b2e;
+}
+
+h2#beef{
+  background-color: #bd5734;
+}
+
+h2#sushi{
+  background-color: #454140;
+}
+p {
+  margin-top: 35px; 
+  padding:15px; 
+  text-align: justify;
 }
